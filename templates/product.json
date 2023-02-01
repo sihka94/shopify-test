@@ -18,6 +18,7 @@
         "price": {
           "type": "price",
           "settings": {
+            "discounter": ""
           }
         },
         "variant_picker": {
