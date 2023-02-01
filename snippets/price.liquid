@@ -90,5 +90,6 @@
       {{ 'products.product.sold_out' | t }}
     </span>
   {%- endif -%}
-    {% render 'final-price', product: product, use_variant: true %}
+    <span class="HELLOBB">{{ discounter }}</span>
+    {% render 'final-price', product: product, use_variant: true, discounter: discounter %}
 </div>

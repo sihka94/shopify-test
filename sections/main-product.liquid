@@ -333,8 +333,9 @@
                 </a>
               </div>
             {%- when 'price' -%}
+              <span class="HELOAA">{{ block.settings.discounter }}</span>
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large', discounter: block.settings -%}
               </div>
               {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
@@ -412,11 +413,6 @@
                   </button>
                 </quantity-input>
               </div>
-            {%- when 'discounter' -%}
-             <span class="discount_selector">
-              <input type={{ block.settings.type }} value={{ block.settings.default }} id="Product-discount-{{ block.settings.id }}"/>
-              hello world
-            </span>
             {%- when 'popup' -%}
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
@@ -710,7 +706,6 @@
                   </span>
                 </p>
               {%- endif -%}
-
               {%- when 'complementary' -%}
                 <product-recommendations class="complementary-products quick-add-hidden no-js-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
                   {%- if recommendations.performed and recommendations.products_count > 0 -%}
@@ -1219,20 +1214,15 @@
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
-      "limit": 1
-    },
-        {
-      "type": "discounter",
-      "name": "t:sections.main-product.blocks.discounter.name",
-          "settings": [
-            {
-              "type": "text",
-              "default": "0.4",
-              "id":"discounter",
-               "label": "Default discount"
-            }
-          ]
-          
+      "limit": 1,
+      "settings": [
+         {
+            "type": "text",
+            "default": "0.4",
+            "id":"discounter",
+            "label": "Default discount"
+         }
+      ]
     },
     {
       "type": "quantity_selector",

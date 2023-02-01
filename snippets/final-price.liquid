@@ -20,4 +20,8 @@
             <span style="color: darkred">{{ totals_discount_in_percent }}%</span>
         </div>
     </div>
+    <span class="discount_selector">
+        {{ discounter }}
+              <input type={{ discounter.type }} value={{ discounter.default }} id="Product-discount-{{ discounter.id }}"/>
+    </span>
 {%- endif -%}

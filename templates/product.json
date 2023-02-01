@@ -31,11 +31,6 @@
           "settings": {
           }
         },
-        "discounter": {
-          "type": "discounter",
-          "settings": {
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
