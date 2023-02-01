@@ -412,7 +412,8 @@
                   </button>
                 </quantity-input>
               </div>
-                            <span class="discount_selector">
+            {%- when 'discounter' -%}
+             <span class="discount_selector">
               hello world
             </span>
             {%- when 'popup' -%}
@@ -1220,8 +1221,8 @@
       "limit": 1
     },
         {
-      "type": "discount_selector",
-      "name": "t:sections.main-product.blocks.discount_selector.name",
+      "type": "discounter",
+      "name": "t:sections.main-product.blocks.discounter.name",
       "limit": 1
     },
     {
