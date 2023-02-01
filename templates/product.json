@@ -18,7 +18,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "discounter": ""
+            "discounter": "0.4"
           }
         },
         "variant_picker": {
