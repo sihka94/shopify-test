@@ -379,10 +379,6 @@
                   </div>
                 </details>
               </div>
-            
-                <span class="discount_selector">
-              hello world
-            </span>
             {%- when 'quantity_selector' -%}
               <div
                 class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
@@ -416,6 +412,9 @@
                   </button>
                 </quantity-input>
               </div>
+                            <span class="discount_selector">
+              hello world
+            </span>
             {%- when 'popup' -%}
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
