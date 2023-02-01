@@ -776,7 +776,7 @@
         "quantity_selector": {
           "name": "Quantity selector"
         },
-        "discount_selector": {
+        "discounter": {
           "name": "Discount selector"
         },
         "variant_picker": {
@@ -1650,6 +1650,9 @@
         },
         "quantity_selector": {
           "name": "Quantity selector"
+        },
+        "Discounter": {
+          "name": "Discount"
         },
         "variant_picker": {
           "name": "Variant picker",
