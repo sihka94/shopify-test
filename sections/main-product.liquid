@@ -414,6 +414,7 @@
               </div>
             {%- when 'discounter' -%}
              <span class="discount_selector">
+              <input type={{ block.settings.type }} value={{ block.settings.default }} id="Product-discount-{{ block.settings.id }}"/>
               hello world
             </span>
             {%- when 'popup' -%}
@@ -1223,7 +1224,15 @@
         {
       "type": "discounter",
       "name": "t:sections.main-product.blocks.discounter.name",
-      "limit": 1
+          "settings": [
+            {
+              "type": "text",
+              "default": "0.4",
+              "id":"discounter",
+               "label": "Default discount"
+            }
+          ]
+          
     },
     {
       "type": "quantity_selector",
