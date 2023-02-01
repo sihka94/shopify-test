@@ -96,6 +96,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "discounter",
         "buy_buttons",
         "description",
         "collapsible-row-0",
