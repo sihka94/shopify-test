@@ -1,0 +1,21 @@
+{%- liquid
+    if use_variant
+    assign target = product.selected_or_first_available_variant
+    else
+    assign target = product
+    endif
+
+    assign dicount_count_of_enabling = product.metafields.custom.show_discount_percntage
+    assign compare_at_price_ready_to_divide = target.compare_at_price | divided_by: 1.0
+    assign discount = target.compare_at_price | minus: target.price | divided_by: compare_at_price_ready_to_divide
+    assign totals_discount_in_percent = discount | times: 100 | round
+-%}
+
+
+{%- if discount >= dicount_count_of_enabling %}
+    <span>{{ dicount_count_of_enabling }}</span>
+    <div class="discount-in-percent">
+        <strong>Discount:</strong>
+        <span style="color: darkred">{{ totals_discount_in_percent }}%</span>
+    </div>
+{%- endif -%}
