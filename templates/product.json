@@ -31,11 +31,6 @@
           "settings": {
           }
         },
-        "discounter": {
-          "type": "discounter",
-          "settings": {
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -96,7 +91,6 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "discounter",
         "buy_buttons",
         "description",
         "collapsible-row-0",
