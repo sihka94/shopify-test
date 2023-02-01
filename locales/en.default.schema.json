@@ -1651,7 +1651,7 @@
         "quantity_selector": {
           "name": "Quantity selector"
         },
-        "Discounter": {
+        "discounter": {
           "name": "Discount"
         },
         "variant_picker": {
