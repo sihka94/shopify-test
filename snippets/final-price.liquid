@@ -13,9 +13,9 @@
 
 
 {%- if discount >= dicount_count_of_enabling %}
-    <span>{{ dicount_count_of_enabling }}</span>
     <div class="discount-in-percent">
+        <div>Discount show only if more than: {{ dicount_count_of_enabling }}</div>
         <strong>Discount:</strong>
-        <span style="color: darkred">{{ totals_discount_in_percent }}%</span>
+        <div style="color: darkred">{{ totals_discount_in_percent }}%</div>
     </div>
 {%- endif -%}
