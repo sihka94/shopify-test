@@ -32,7 +32,7 @@
           }
         },
         "discounter": {
-          "type": "discounter",
+          "type": "text",
           "settings": {
           }
         },
