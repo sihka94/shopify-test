@@ -14,13 +14,15 @@
 
 {%- if discount >= dicount_count_of_enabling %}
     <div class="discount-in-percent">
-        <div>Discount show only if more than: {{ dicount_count_of_enabling }}</div>
+        <div style="font-size: 10px">Value from metafield {{ dicount_count_of_enabling }}</div>
+        <div style="font-size: 10px">Value from section "main-product" object price {{ discounter }}</div>
+        <div style="font-size: 12px">Discount show only if more than: {{ dicount_count_of_enabling }}</div>
         <div>
             <strong>Discount:</strong>
             <span style="color: darkred">{{ totals_discount_in_percent }}%</span>
         </div>
     </div>
     <span class="discount_selector">
-              <input type=text value={{ discounter }}/>
+              <input type=text value={{ discounter }} hidden>
     </span>
 {%- endif -%}
