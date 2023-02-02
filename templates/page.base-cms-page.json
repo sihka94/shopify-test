@@ -1,5 +1,40 @@
 {
   "sections": {
+    "09499b36-b875-4b24-88ff-08ad578cfa1c": {
+      "type": "image-banner",
+      "blocks": {
+        "template--17867979718955__09499b36-b875-4b24-88ff-08ad578cfa1c-167533238852cb0310-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--17867979718955__09499b36-b875-4b24-88ff-08ad578cfa1c-167533238852cb0310-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--17867979718955__09499b36-b875-4b24-88ff-08ad578cfa1c-167533238852cb0310-0",
+        "template--17867979718955__09499b36-b875-4b24-88ff-08ad578cfa1c-167533238852cb0310-1"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -9,6 +44,7 @@
     }
   },
   "order": [
+    "09499b36-b875-4b24-88ff-08ad578cfa1c",
     "main"
   ]
 }
